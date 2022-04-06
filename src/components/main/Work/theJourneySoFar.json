@@ -1,0 +1,52 @@
+{
+    "work": [
+        {
+            "url": "https://triboxonline.com",
+            "name": "Tribox",
+            "description": "Tribox is a professional sports equipment store. The requirements were the migration from their old e-commerce platform to a new one, as well as the general UI/UX design of the new site and its functionalities. Completion date: 2021",
+            "responabilities": [
+                "Migration",
+                "Design",
+                "Development",
+                "Publication"
+            ],
+            "img": "/img/logo-tribox-VERTICAL.png"
+        },
+        {
+            "url": "https://gregarioscc.com",
+            "name": "Gregarios",
+            "description": "Gregorioscc is a cycling club focused on promoting the healthy practice of sports in Spain. The requirements were the implementation of new features on the site, such as banner ads, new content sections, new e-commerce sections, and site maintenance. Completion date: 2021",
+            "responabilities": [
+                "Modificaciones de front-end",
+                "Design",
+                "Development",
+                "Maintenance"
+            ],
+            "img": "/img/gregarios-blanco-1-1024x375.png"
+        }
+    ],
+    "personal": [
+        {
+            "url": "https://bulls-and-cows-img-qzoi3ie7tq-uc.a.run.app",
+            "name": "bulls and cows",
+            "description": "Bulls and Cows is a nostalgic attack on a little math game that I used to enjoy with my friends several years ago. It seemed like an interesting project to implement tools like typescript, nextjs, googlecloud, firebase etc. Stage: Alpha. Completion date: feb-2022",
+            "responabilities": [
+                "Design",
+                "Development",
+                "Publication"
+            ],
+            "img": "/img/Bulls and Cows - no background copy.svg"
+        },
+        {
+            "url": "https://next-demo-player.vercel.app/signin",
+            "name": "demo music player",
+            "description": "Music demo player is an interface building project where I take the popular spotify platform as a reference. It was an opportunity to test other solutions like ChakraUi and Prisma orm. Stage: Beta. Completion date: Mar-2022. To get the full exp on the demo, use the credentials email: usertest@email.com psw: password",
+            "responabilities": [
+                "Design",
+                "Development",
+                "Publication"
+            ],
+            "img": "/img/Trax - no background.svg"
+        }
+    ]
+}
