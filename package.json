@@ -1,10 +1,13 @@
 {
-  "name": "portf2",
+  "name": "imagine96 portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Imagine96.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +46,7 @@
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "autoprefixer": "^10.4.2",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.4.8",
     "react-icons": "^4.3.1",
     "tailwindcss": "^3.0.23",

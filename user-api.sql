@@ -1,9 +1,0 @@
-CREATE TABLE "user"(
-    id SERIAL NOT NULL,
-    createdAt TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP(3) NOT NULL,
-    email VARCHAR(40) NOT NULL,
-    username VARCHAR(20) NULL,
-    "password" TEXT NOT NULL,
-    CONSTRAINT "User_pkey" PRIMARY KEY ("id")
-);
