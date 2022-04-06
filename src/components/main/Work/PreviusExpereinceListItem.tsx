@@ -18,7 +18,7 @@ const PreviusExperienceListItem: React.FC<Props> = ({ description, img, name, re
             </ul>
             <a className="underline w-fit rounded-md p-4 bg-dark bg-opacity-[0.85] hover:transition hover:text-red-800 hover:shadow-xl hover:-translate-y-2 flex flex-row items-center gap-1 justify-start text-light" href={url} target="_blank" >
                 {"Link"} <MdLink />
-                <img className="mx-4 max-w-[100px] max-h-[100px]" src={img} alt={name} />
+                <img className="mx-4 max-w-[100px] max-h-[100px]" src={process.env.PUBLIC_URL + img} alt={name} />
             </a>
         </div>
     )
