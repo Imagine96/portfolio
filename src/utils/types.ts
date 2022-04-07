@@ -3,16 +3,17 @@ export interface ObjectWithKeys {
 }
 
 export interface AppContextState {
-    darkMode: boolean
+    darkMode: boolean,
+    eng: boolean
 }
 
-export type AppContextActionTypes = "toggle_dark_mode"
+export type AppContextActionTypes = "toggle_dark_mode" | "toggle_idiom"
 
 export interface AppContextAction {
     type: AppContextActionTypes
 }
 
-export type ContentSections = "home" | "about" | "work" | "contact"
+export type ContentSections = "home" | "about" | "experience" | "contact"
 
 export interface UseNavigationSections {
     sections: Sections,
@@ -22,7 +23,7 @@ export interface UseNavigationSections {
 export interface Sections extends ObjectWithKeys {
     home: boolean,
     about: boolean,
-    work: boolean,
+    experience: boolean,
     contact: boolean
 }
 
@@ -37,8 +38,14 @@ export type ContactFormFields = "name" | "email" | "message"
 export interface PrevExp {
     "url": string,
     "name": string,
-    "description": string,
-    "responabilities": string[],
+    "description": {
+        eng: string,
+        esp: string
+    },
+    "responabilities": {
+        eng: string[],
+        esp: string[]
+    },
     "img": string
 }
 

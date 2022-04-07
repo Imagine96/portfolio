@@ -62,7 +62,7 @@ const useForm = (validationFunction?: (contactFormDataType: ContactFormDataType)
             }
         } catch (err) {
             setError(err instanceof Error ? err.message : "error submitting form")
-        } 
+        }
     }
 
     const validate = (): boolean => {

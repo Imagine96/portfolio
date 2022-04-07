@@ -1,15 +1,13 @@
-import React, { useMemo } from "react";
+import React from "react";
 import PreviusExperienceListItem from "./PreviusExpereinceListItem";
 import Data from "./theJourneySoFar.json";
-import { PreviusExperienceDataType } from "../../../utils/types"
 
 interface Props {
   darkMode: boolean;
+  eng: boolean
 }
 
-const Work: React.FC<Props> = ({ darkMode }) => {
-
-  const data = useMemo(() => Data as PreviusExperienceDataType, [])
+const Work: React.FC<Props> = ({ darkMode, eng }) => {
 
   return (
     <div
@@ -20,23 +18,23 @@ const Work: React.FC<Props> = ({ darkMode }) => {
         className={`${darkMode ? "text-darkMode" : "text-dark"
           } text-3xl mb-4 text-left mx-auto w-[70%]`}
       >
-        The journey so far
+        {eng ? "My Journey" : "El viaje"}
       </h1>
       <ul className=" w-[70%] grid grid-flow-rows gap-6" >
         <li>
-          <h2 className="text-2xl font-medium my-4" >
-            Previus experience
+          <h2 className="text-2xl font-medium my-12 border-b-2 border-b-gray-300 ">
+            {eng ? "Previus experience" : "Experiencia previa"}
           </h2>
           <ul className="grid grid-flow-rows gap-6">
-            {data.work.map(item => <PreviusExperienceListItem darkMode={darkMode} key={item.url} {...item} />)}
+            {Data.work.map(item => <PreviusExperienceListItem eng={eng} darkMode={darkMode} key={item.url} {...item} />)}
           </ul>
         </li>
         <li>
-          <h2 className="text-2xl font-medium my-4" >
-            Personal Proyects
+          <h2 className="text-2xl font-medium my-12 border-b-2 border-b-gray-300 ">
+            {eng ? "Personal Proyects" : "Algunos proyectos personales"}
           </h2>
           <ul className="grid grid-flow-rows gap-6">
-            {data.personal.map(item => <PreviusExperienceListItem darkMode={darkMode} key={item.url} {...item} />)}
+            {Data.personal.map(item => <PreviusExperienceListItem eng={eng} darkMode={darkMode} key={item.url} {...item} />)}
           </ul>
         </li>
       </ul>

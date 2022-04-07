@@ -1,0 +1,20 @@
+{
+    "eng": {
+        "sections": [
+            "Home",
+            "About",
+            "Experience",
+            "Contact"
+        ],
+        "message": "Get in touch!"
+    },
+    "esp": {
+        "sections": [
+            "Inicio",
+            "Sobre mi",
+            "Experiencia",
+            "Contacto"
+        ],
+        "message": "Ponte en contacto!"
+    }
+}

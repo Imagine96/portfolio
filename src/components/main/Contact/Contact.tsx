@@ -5,13 +5,12 @@ import Button from "../../button/Button";
 
 interface Props {
   darkMode: boolean;
+  eng: boolean
 }
 
-const Contact: React.FC<Props> = ({ darkMode }) => {
+const Contact: React.FC<Props> = ({ darkMode, eng }) => {
   const {
     formState,
-    onSubmitionResStatus,
-    error,
     submitHandler,
     updateFormDataHandler,
   } = useForm();
@@ -19,21 +18,19 @@ const Contact: React.FC<Props> = ({ darkMode }) => {
   return (
     <form
       onSubmit={submitHandler}
-      className={`${
-        darkMode ? "dark_scroll" : "light_scroll"
-      } intro_opacity pt-10 relative flex flex-col max-h-screen overflow-y-scroll gap-4 md:gap-10 justify-center pb-8 items-center min-h-screen w-full
+      className={`${darkMode ? "dark_scroll" : "light_scroll"
+        } intro_opacity pt-10 relative flex flex-col max-h-screen overflow-y-scroll gap-4 md:gap-10 justify-center pb-8 items-center min-h-screen w-full
       ${darkMode ? "text-darkMode" : "text-dark"}
       `}
     >
       <h1
-        className={`${
-          darkMode ? "text-darkMode" : "text-dark"
-        } text-3xl text-left mx-auto w-[70%]`}
+        className={`${darkMode ? "text-darkMode" : "text-dark"
+          } text-3xl text-left mx-auto w-[70%]`}
       >
-        Contact
+        {eng ? "Contact" : "Contacto"}
       </h1>
       <div className="w-[70%] flex flex-col gap-4" >
-        <label htmlFor="name"> Your Name </label>
+        <label htmlFor="name"> {eng ? "Your Name" : "Tu nombre"} </label>
         <input
           className="p-2 text-dark"
           onChange={(e) => updateFormDataHandler("name", e)}
@@ -44,7 +41,7 @@ const Contact: React.FC<Props> = ({ darkMode }) => {
           value={formState.name}
           placeholder="Your name"
         />
-        <label htmlFor="email"> Your Email </label>
+        <label htmlFor="email"> {eng ? "Your Email" : "Tu email"} </label>
         <input
           className="p-2 text-dark"
           onChange={(e) => updateFormDataHandler("email", e)}
@@ -54,7 +51,7 @@ const Contact: React.FC<Props> = ({ darkMode }) => {
           value={formState.email}
           placeholder="Your email"
         />
-        <label htmlFor="message"> Your Message </label>
+        <label htmlFor="message"> {eng ? "Your Message" : "Tu mensaje"} </label>
         <textarea
           className="p-2 text-dark"
           rows={5}
@@ -71,13 +68,12 @@ const Contact: React.FC<Props> = ({ darkMode }) => {
         </Button>
       </div>
       <div className="w-[70%] flex flex-col gap-8 items-center">
-      <h3
-        className={`${
-          darkMode ? "text-darkMode" : "text-dark"
-        } text-xl mt-10 text-center w-[80%]`}
-      >
-        You can also find me in:
-      </h3>
+        <h3
+          className={`${darkMode ? "text-darkMode" : "text-dark"
+            } text-xl mt-10 text-center w-[80%]`}
+        >
+          {eng ? "You can also find me in:" : "También puedes contactar:"}
+        </h3>
         <div className="flex flex-row justify-center gap-16 items-center" >
           <RRSS darkMode={darkMode} />
         </div>

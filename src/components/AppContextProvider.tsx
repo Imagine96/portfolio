@@ -7,18 +7,26 @@ interface Props {
 
 const initialState: AppContextState = {
     darkMode: true,
+    eng: true
 }
 
 export const appContext = createContext<{
     state: AppContextState,
     dispatch: React.Dispatch<AppContextAction>
-}>({state: initialState, dispatch: () => null})
+}>({ state: initialState, dispatch: () => null })
 
 const reducer = (state: AppContextState, action: AppContextAction): AppContextState => {
-    switch(action.type){
+    switch (action.type) {
         case "toggle_dark_mode": {
             return {
-                darkMode: !state.darkMode
+                darkMode: !state.darkMode,
+                eng: state.eng
+            }
+        }
+        case "toggle_idiom": {
+            return {
+                darkMode: state.darkMode,
+                eng: !state.eng
             }
         }
         default: {
@@ -27,13 +35,13 @@ const reducer = (state: AppContextState, action: AppContextAction): AppContextSt
     }
 }
 
-export const AppContextProvider: React.FC<Props> = ({children}) => {
+export const AppContextProvider: React.FC<Props> = ({ children }) => {
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
-    const context = {state, dispatch}
+    const context = { state, dispatch }
 
-    return(
+    return (
         <appContext.Provider value={context}>
             {children}
         </appContext.Provider>

@@ -7,7 +7,7 @@ interface Props {
   updateToNextSection: () => void;
 }
 
-const SectionControlers: React.FC<Props> = ({
+const SectionControllers: React.FC<Props> = ({
   darkMode,
   updateSection,
   updateToNextSection,
@@ -85,4 +85,4 @@ const SectionControlers: React.FC<Props> = ({
   }
 };
 
-export default SectionControlers;
+export default SectionControllers;
