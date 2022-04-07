@@ -1,0 +1,22 @@
+{
+    "eng": {
+        "header": "Hello, I am Ruben.\n Full Stack developer.",
+        "main": "I specialize in building user interfaces and client-side functionalities. For that I manage different Js tools and frameworks, which ensures greater scalability and customization even after the final product is delivered.",
+        "buttons": [
+            "home",
+            "About",
+            "Experience",
+            "Contact"
+        ]
+    },
+    "esp": {
+        "header": "Hola, mi nombre es Rubén.\n Full Stack developer.",
+        "main": "Me especializo en la construcción de interfaces de usuario como websites y webapps y sus funcionalidades. Para ello, manejo herramientas y frameworks de Js lo que asegura la escalabilidad y personalización futura del producto incluso una vez terminado.",
+        "buttons": [
+            "home",
+            "Sobre mi",
+            "Experiencia",
+            "Contacto"
+        ]
+    }
+}

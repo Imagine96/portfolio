@@ -3,49 +3,91 @@
         {
             "url": "https://triboxonline.com",
             "name": "Tribox",
-            "description": "Tribox is a professional sports equipment store. The requirements were the migration from their old e-commerce platform to a new one, as well as the general UI/UX design of the new site and its functionalities. Completion date: 2021",
-            "responabilities": [
-                "Migration",
-                "Design",
-                "Development",
-                "Publication"
-            ],
+            "description": {
+                "eng": "Tribox is a professional sports equipment store. The requirements were the migration from their old e-commerce platform to a new one, as well as the general UI/UX design of the new site and its functionalities. Completion date: 2021",
+                "esp": "Tribox es una tienda de equipamiento deportivo profesional. Los requerimientos fueron la migración desde su vieja plataforma de e-commerce a una nueva y el diseño, confección y publicación del nuevo sitio y sus funcionalidades. Fecha de culminación: 2021"
+            },
+            "responabilities": {
+                "eng": [
+                    "Migration",
+                    "Design",
+                    "Development",
+                    "Publication"
+                ],
+                "esp": [
+                    "Migración",
+                    "Diseño",
+                    "Desarrollo",
+                    "Publicación"
+                ]
+            },
             "img": "/img/logo-tribox-VERTICAL.png"
         },
         {
             "url": "https://gregarioscc.com",
             "name": "Gregarios",
-            "description": "Gregorioscc is a cycling club focused on promoting the healthy practice of sports in Spain. The requirements were the implementation of new features on the site, such as banner ads, new content sections, new e-commerce sections, and site maintenance. Completion date: 2021",
-            "responabilities": [
-                "Modificaciones de front-end",
-                "Design",
-                "Development",
-                "Maintenance"
-            ],
+            "description": {
+                "eng": "Gregorioscc is a cycling club focused on promoting the healthy practice of sports in Spain. The requirements were the implementation of new features on the site, such as banner ads, new content sections, new e-commerce sections, and site maintenance. Completion date: 2021",
+                "esp": "Gregarioscc es un club de cilclismo centrado en promover la práctica saludable del deporte en España. Los requerimientos fueron la implementación de nuevas funcionalidades del sitio como banners publicitarios, nuevas secciones de contenido, nuevas secciones de e-commerce y mantenimiento del sitio. Fecha de culminación: 2021"
+            },
+            "responabilities": {
+                "eng": [
+                    "Front end update",
+                    "Design",
+                    "Development",
+                    "Maintenance"
+                ],
+                "esp": [
+                    "Actualizaciones del front end",
+                    "Diseño",
+                    "Desarrollo",
+                    "Mantenimiento"
+                ]
+            },
             "img": "/img/gregarios-blanco-1-1024x375.png"
         }
     ],
     "personal": [
         {
             "url": "https://bulls-and-cows-img-qzoi3ie7tq-uc.a.run.app",
-            "name": "bulls and cows",
-            "description": "Bulls and Cows is a nostalgic attack on a little math game that I used to enjoy with my friends several years ago. It seemed like an interesting project to implement tools like typescript, nextjs, googlecloud, firebase etc. Stage: Alpha. Completion date: feb-2022",
-            "responabilities": [
-                "Design",
-                "Development",
-                "Publication"
-            ],
+            "name": "Bulls and Cows",
+            "description": {
+                "eng": "Bulls and Cows is a nostalgic attack on a little math game that I used to enjoy with my friends several years ago. It seemed like an interesting project to implement tools like typescript, nextjs, googleCloud, firebase etc. Stage: Alpha. Completion date: feb-2022",
+                "esp": "Vacas y Toros es un ataque de nostalgia a un pequeño juego de matemáticas que solía jugar con mis amigos hace años. Me pareción un proyecto interesante de desarrollar donde utilizar typescript, nextjs, googleCloud, firebase etc. Estado: Alpha. Fecha de actualización: feb-2022"
+            },
+            "responabilities": {
+                "eng": [
+                    "Design",
+                    "Development",
+                    "Publication"
+                ],
+                "esp": [
+                    "Diseño",
+                    "Desarrollo",
+                    "Publicación"
+                ]
+            },
             "img": "/img/Bulls and Cows - no background copy.svg"
         },
         {
             "url": "https://next-demo-player.vercel.app/signin",
             "name": "demo music player",
-            "description": "Music demo player is an interface building project where I take the popular spotify platform as a reference. It was an opportunity to test other solutions like ChakraUi and Prisma orm. Stage: Beta. Completion date: Mar-2022. To get the full exp on the demo, use the credentials email: usertest@email.com psw: password",
-            "responabilities": [
-                "Design",
-                "Development",
-                "Publication"
-            ],
+            "description": {
+                "eng": "Music demo player is an interface building project where I take the popular spotify platform as a reference. It was an opportunity to test other solutions like ChakraUi and Prisma orm. Stage: Beta. Completion date: Mar-2022. To get the full exp on the demo, use the credentials email: usertest@email.com psw: password",
+                "esp": "Music demo player es proyecto de construcción de interfaces donde tomo la plataforma spotify como referencia. Fue una oportunidad para probar otras alternativas y soluciones tanto en la interfaz como en el back-end como ChakaraUi, Prisma orm y Postrgresql. Estado: Beta. Fecha de actualización: mar-2022. \n Para la experiencia completa usar credenciales email: usertest@email.com psw: password"
+            },
+            "responabilities": {
+                "eng": [
+                    "Design",
+                    "Development",
+                    "Publication"
+                ],
+                "esp": [
+                    "Diseño",
+                    "Desarrollo",
+                    "Publicación"
+                ]
+            },
             "img": "/img/Trax - no background.svg"
         }
     ]

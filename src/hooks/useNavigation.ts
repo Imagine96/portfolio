@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { ContentSections, UseNavigationSections, Sections } from "../utils/types"
 
-const emptySections: Sections= {
+const emptySections: Sections = {
     home: false,
     about: false,
-    work: false,
+    experience: false,
     contact: false
 }
 
-const useNavigation = (): UseNavigationSections  => {
+const useNavigation = (): UseNavigationSections => {
 
     const [sections, setSections] = useState<Sections>({
         home: true,
         about: false,
-        work: false,
+        experience: false,
         contact: false
     })
 

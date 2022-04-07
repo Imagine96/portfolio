@@ -1,24 +1,27 @@
 import React from "react";
 import { Sections, ContentSections } from "../../../utils/types";
-import DarkModeSwitch from "./DarkModeSwitch";
+import StateSwitch from "./StateSwitch";
 import SectionMenuItem from "./SectionMenuItem";
 import RRSS from "../../rrss/RRSS";
+import Data from "./sections.json"
 
 interface Props {
   sections: Sections;
   updateSection: (target: ContentSections) => void;
+  eng: boolean;
 }
 
-const SidebarContent: React.FC<Props> = ({ sections, updateSection }) => {
+const SidebarContent: React.FC<Props> = ({ sections, updateSection, eng }) => {
   return (
-    <div className="row-span-5 flex flex-col gap-4 xl:gap-6 2xl:justify-around 2xl:pb-10 2xl:w-[80%] items-center">
-      <DarkModeSwitch />
+    <div className="row-span-5 pt-8 relative flex flex-col gap-4 xl:gap-6 2xl:justify-around 2xl:pb-10 2xl:w-[80%] items-center">
+      <StateSwitch />
       <ul className="list-none space-y-3 w-full">
-        {Object.keys(sections).map((key) => {
+        {Object.keys(sections).map((key, index) => {
           const section = key as ContentSections;
           return (
             <SectionMenuItem
               updateSection={updateSection}
+              as={eng ? Data.eng.sections[index] : Data.esp.sections[index]}
               key={key}
               name={section}
               isSelected={sections[key]}
@@ -48,20 +51,13 @@ const SidebarContent: React.FC<Props> = ({ sections, updateSection }) => {
           />
         </svg>
       </a>
-      <p className="text-light text-sm font-light pl-[20%] pr-10">
-        My part? It is to bring ideas and designs to the internet in the form of
-        handcrafted websites and webapps because I see in it more than an
-        essential business tool for sales and marketing, I see a form of
-        expression not just for the business behind it, but also for the
-        designer who dreams it and the developer who conceives it.
-      </p>
       <h3 className="text-lg pl-[20%] w-full text-light font-light">
-        Get in touch!
+        {eng ? Data.eng.message : Data.esp.message}
       </h3>
       <div className="flex flex-row px-[20%] w-full items-center justify-start gap-16">
         <RRSS darkMode={true} />
       </div>
-      <div className="text-xs w-full mt-8 pl-[20%] text-light">
+      <div className="text-xs w-full absolute bottom-8 pl-[20%] text-light">
         Photo by{" "}
         <a
           className="underline"

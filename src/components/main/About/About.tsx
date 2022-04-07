@@ -1,11 +1,13 @@
 import React from "react";
-import { ContentSections } from "@utils/types"
+import Data from "./content.json"
+
 
 interface Props {
   darkMode: boolean;
+  eng: boolean
 }
 
-const About: React.FC<Props> = ({ darkMode }) => {
+const About: React.FC<Props> = ({ darkMode, eng }) => {
 
   return (
     <div
@@ -16,24 +18,17 @@ const About: React.FC<Props> = ({ darkMode }) => {
         className={`${darkMode ? "text-darkMode" : "text-dark"
           } text-3xl mb-4 text-left mx-auto w-[70%]`}
       >
-        About
+        {Data[eng ? "eng" : "esp"].title}
       </h1>
       <p
         className={`${darkMode ? "text-darkMode" : "text-dark"
           } w-[70%]`}
       >
-        <span className="text-lg font-semibold">My part?</span> <br />
-        It is to bring ideas and designs to the internet in the form of
-        handcrafted websites and webapps because I see in it more than an
-        essential business tool for sales and marketing, I see a form of
-        expression not just for the business behind it, but also for the
-        designer who dreams it and the developer who conceives it.
+        <span className="text-lg font-semibold"> {Data[eng ? "eng" : "esp"].my_part.title} </span> <br />
+        {Data[eng ? "eng" : "esp"].my_part.content}
         <br /> <br />
-        <span className="text-lg font-semibold">How?</span> <br />
-        I specialize in building user interfaces and client-side
-        functionalities. For that I manage html and different css and js tools
-        and frameworks, which ensures greater scalability and customization even
-        after the final product is delivered.
+        <span className="text-lg font-semibold">{Data[eng ? "eng" : "esp"].how.title} </span> <br />
+        {Data[eng ? "eng" : "esp"].how.content}
         <br /> <br />
       </p>
 
@@ -43,11 +38,9 @@ const About: React.FC<Props> = ({ darkMode }) => {
             } flex gap-1 flex-col list-disc pl-10`}
         >
           <span className="text-lg -ml-8 font-semibold">Skills</span>
-          <li className="list-item">Team player</li>
-          <li className="list-item">Problem solving</li>
-          <li className="list-item">Critical thinking</li>
-          <li className="list-item">Fast learner</li>
-          <li className="list-item">UI/UX essentials</li>
+          {
+            Data[eng ? "eng" : "esp"].skills.map(skill => <li key={skill} className="list-item">{skill}</li>)
+          }
         </ul>
         <ul
           className={`${darkMode ? "text-darkMode" : "text-dark"
@@ -77,13 +70,8 @@ const About: React.FC<Props> = ({ darkMode }) => {
         className={`${darkMode ? "text-darkMode" : "text-dark"
           } w-[70%] mt-6`}
       >
-        <span className="text-lg font-semibold">Who am I?</span> <br />
-        Hello, my name is Rubén, js developer.
-        <br />
-        I am a calm person but very communicative in confidence.
-        <br /> I value logic, camaraderie and experimentation, always happy to
-        try some new technology and eager to learn. I am a fast learner,
-        diligent and hardworking, trying to improve a little every day.
+        <span className="text-lg font-semibold">{Data[eng ? "eng" : "esp"].about_me.title}</span> <br />
+        {Data[eng ? "eng" : "esp"].about_me.content}
       </p>
     </div>
   );
