@@ -31,7 +31,7 @@ const SidebarContent: React.FC<Props> = ({ sections, updateSection, eng }) => {
       </ul>
       <a
         className="text-light text-xl w-full pl-[20%] flex flex-row items-center gap-4"
-        href="/cv/test.pdf"
+        href={process.env.PUBLIC_URL + "/cv/ruben_cv.pdf"}
         target="_blank"
         rel="noreferrer"
       >

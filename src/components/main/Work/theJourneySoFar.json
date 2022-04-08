@@ -28,7 +28,7 @@
             "name": "Gregarios",
             "description": {
                 "eng": "Gregorioscc is a cycling club focused on promoting the healthy practice of sports in Spain. The requirements were the implementation of new features on the site, such as banner ads, new content sections, new e-commerce sections, and site maintenance. Completion date: 2021",
-                "esp": "Gregarioscc es un club de cilclismo centrado en promover la práctica saludable del deporte en España. Los requerimientos fueron la implementación de nuevas funcionalidades del sitio como banners publicitarios, nuevas secciones de contenido, nuevas secciones de e-commerce y mantenimiento del sitio. Fecha de culminación: 2021"
+                "esp": "Gregarioscc es un club de ciclismo centrado en promover la práctica saludable del deporte en España. Los requerimientos fueron la implementación de nuevas funcionalidades del sitio como banners publicitarios, nuevas secciones de contenido, nuevas secciones de e-commerce y mantenimiento del sitio. Fecha de culminación: 2021"
             },
             "responabilities": {
                 "eng": [
@@ -53,7 +53,7 @@
             "name": "Bulls and Cows",
             "description": {
                 "eng": "Bulls and Cows is a nostalgic attack on a little math game that I used to enjoy with my friends several years ago. It seemed like an interesting project to implement tools like typescript, nextjs, googleCloud, firebase etc. Stage: Alpha. Completion date: feb-2022",
-                "esp": "Vacas y Toros es un ataque de nostalgia a un pequeño juego de matemáticas que solía jugar con mis amigos hace años. Me pareción un proyecto interesante de desarrollar donde utilizar typescript, nextjs, googleCloud, firebase etc. Estado: Alpha. Fecha de actualización: feb-2022"
+                "esp": "Vacas y Toros es un ataque de nostalgia a un pequeño juego de matemáticas que solía jugar con mis amigos hace años. Me pareció un proyecto interesante de desarrollar donde utilizar typescript, nextjs, googleCloud, firebase etc. Estado: Alpha. Fecha de actualización: feb-2022"
             },
             "responabilities": {
                 "eng": [

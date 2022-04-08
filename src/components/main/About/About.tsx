@@ -11,12 +11,12 @@ const About: React.FC<Props> = ({ darkMode, eng }) => {
 
   return (
     <div
-      className={`${darkMode ? "dark_scroll" : "light_scroll"
-        } intro_opacity relative flex flex-col h-full overflow-y-auto gap-4 pb-8 items-center pt-20 mb-20 w-full`}
+      className={`${darkMode ? "dark_scroll" : "light_scroll text-dark"
+        } intro_opacity relative flex flex-col max-h-screen overflow-y-scroll gap-4 py-10 items-center min-h-screen w-full text-light`}
     >
       <h1
         className={`${darkMode ? "text-darkMode" : "text-dark"
-          } text-3xl mb-4 text-left mx-auto w-[70%]`}
+          } text-3xl mb-2 text-left mx-auto w-[70%]`}
       >
         {Data[eng ? "eng" : "esp"].title}
       </h1>
