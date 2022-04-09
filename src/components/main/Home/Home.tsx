@@ -23,15 +23,6 @@ const Home: React.FC<Props> = ({ updateSection, sections, idiom }) => {
       <p className="text-light font-light w-[70%] text-center md:text-left md:w-[55%] lg:w-[40%]">
         {idiom ? Data.eng.main : Data.esp.main}
       </p>
-      <div className="space-y-4" >
-        {Object.keys(sections).map((key, index) => {
-          const name = key as ContentSections;
-          if (name === "home") return null;
-          return (
-            <HomeLink name={name} as={idiom ? Data.eng.buttons[index] : Data.esp.buttons[index]} key={name} updateSection={() => updateSection(name)} />
-          );
-        })}
-      </div>
       {Object.keys(sections).map((key, index) => {
         const name = key as ContentSections;
         if (name === "home") return null;
