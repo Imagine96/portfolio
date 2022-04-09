@@ -19,7 +19,6 @@ const Home: React.FC<Props> = ({ updateSection, sections, idiom }) => {
         {idiom ? Data.eng.header_2 : Data.esp.header_2}
       </h1>
       <h1 className="text-light text-center md:text-left font-light text-xl md:text-5xl w-[50%]  md:w-[60%]">
-
       </h1>
       <p className="text-light font-light w-[70%] text-center md:text-left md:w-[55%] lg:w-[40%]">
         {idiom ? Data.eng.main : Data.esp.main}
@@ -33,6 +32,13 @@ const Home: React.FC<Props> = ({ updateSection, sections, idiom }) => {
           );
         })}
       </div>
+      {Object.keys(sections).map((key, index) => {
+        const name = key as ContentSections;
+        if (name === "home") return null;
+        return (
+          <HomeLink name={name} as={idiom ? Data.eng.buttons[index] : Data.esp.buttons[index]} key={name} updateSection={() => updateSection(name)} />
+        );
+      })}
     </div>
   );
 };
