@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import { AppContextProvider } from "./components/AppContextProvider";
 import Main from "./components/main/Main";
 import Sidebar from "./components/sidebar/SideBar";

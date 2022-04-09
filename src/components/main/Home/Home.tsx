@@ -12,13 +12,26 @@ interface Props {
 const Home: React.FC<Props> = ({ updateSection, sections, idiom }) => {
 
   return (
-    <div className="min-h-screen intro_opacity space-y-2 md:space-y-8 flex flex-col items-center  justify-center gap-8 md:pt-[15%] md:block md:pl-[10%]">
-      <h1 className="text-light text-center md:text-left font-light text-5xl w-[50%]  md:w-[60%]">
+    <div className="min-h-screen py-12 intro_opacity space-y-2 md:space-y-8 flex flex-col items-center  justify-center gap-8 md:pt-[15%] md:block md:pl-[10%]">
+      <h1 className="text-light text-center md:text-left font-light text-4xl md:text-5xl w-[50%]  md:w-[60%]">
         {idiom ? Data.eng.header : Data.esp.header}
+        <br />
+        {idiom ? Data.eng.header_2 : Data.esp.header_2}
+      </h1>
+      <h1 className="text-light text-center md:text-left font-light text-xl md:text-5xl w-[50%]  md:w-[60%]">
       </h1>
       <p className="text-light font-light w-[70%] text-center md:text-left md:w-[55%] lg:w-[40%]">
         {idiom ? Data.eng.main : Data.esp.main}
       </p>
+      <div className="space-y-4" >
+        {Object.keys(sections).map((key, index) => {
+          const name = key as ContentSections;
+          if (name === "home") return null;
+          return (
+            <HomeLink name={name} as={idiom ? Data.eng.buttons[index] : Data.esp.buttons[index]} key={name} updateSection={() => updateSection(name)} />
+          );
+        })}
+      </div>
       {Object.keys(sections).map((key, index) => {
         const name = key as ContentSections;
         if (name === "home") return null;
