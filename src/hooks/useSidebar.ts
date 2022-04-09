@@ -39,7 +39,7 @@ const useSidebar = (sections: Sections, updateSection: (target: ContentSections)
   }
 
   useEffect(() => {
-    console.log(navigator.userAgent)
+
     if (window.screen.width <= window.screen.height && /Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent)) {
       setFixedSidebar(false);
